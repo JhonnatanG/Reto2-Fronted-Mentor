@@ -127,6 +127,10 @@ body {
     box-shadow: 0px 6px 8px var(--graying-blue);
 }
 
+.icon-mobile {
+    display: none;
+}
+
 .shareIcons::before {
     position: absolute;
     content: '';
@@ -160,6 +164,7 @@ body {
 .inactive {
     display: none;
 }
+
 
 @media(max-width: 750px) {
     .info-product {
@@ -221,10 +226,19 @@ body {
     }
     .icon-mobile {
         background: var(--desaturated-dark-B);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
     
     
     .icon-mobile img {
+        width: 18px;
+        height: 10px;
         filter: invert(50%) saturate(94%) hue-rotate(328deg) brightness(200%) contrast(100%);
     }
 }
